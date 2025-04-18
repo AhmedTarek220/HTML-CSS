@@ -1,0 +1,238 @@
+/* start position */
+.p-rel{
+    position: relative;
+}
+/* end position*/
+/* start display */
+.flex{
+    display: flex;
+}
+.f-1{
+    flex: 1;
+}
+.allgin-center{
+    align-items: center;
+}
+.f-center{
+    align-items: center;
+    justify-content: center;
+}
+.f-between{
+    align-items: center;
+    justify-content: space-between;
+}
+.center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.d-grid{
+    display: grid;
+    gap: 20px;
+}
+.d-block{
+    display: block;
+}
+/* end display*/
+/* start padding & margin */
+.p-0{
+    padding: 0;
+}
+.p-10{
+    padding: 10px;
+}
+.p-20{
+    padding: 20px;
+}
+.p-30{
+    padding: 30px;
+}
+.pt-15{
+    padding-top: 15px;
+}
+.pb-10{
+    padding-bottom: 10px;
+}
+.pb-15{
+    padding-bottom: 15px;
+}
+.pb-20{
+    padding-bottom: 20px;
+}
+.pl-15{
+    padding-left: 15px;
+}
+.m-0{
+    margin: 0;
+}
+.m-10{
+    margin: 10px;
+}
+.m-20{
+    margin: 20px;
+}
+.m-30{
+    margin: 30px;
+}
+.mt-0{
+    margin-top: 0;
+}
+.mt-5{
+    margin-top: 5px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mr-10{
+    margin-right: 10px;
+}
+.mb-0{
+    margin-bottom: 0;
+}
+.mb-5{
+    margin-bottom: 5px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.ml-10{
+    margin-left: 10px;
+}
+.ml-15{
+    margin-left: 15px;
+}
+/* end padding & margin */
+/*start color*/
+.c-black{
+    color: black;
+}
+.c-white{
+    color: white;
+}
+.c-grey{
+    color:var(--grey-color);
+}
+.c-red{
+    color: var(--red-color);
+}
+.c-green{
+    color:var(--green-color);
+}
+.c-blue{
+    color:var(--blue-color);
+}
+.c-orange{
+    color:var(--orange-color);
+}
+.bg-white{
+    background-color: white;
+}
+.bg-eee{
+    background-color: #eee;
+}
+.bg-blue{
+    background-color: var(--blue-color);
+}
+.bg-orange {
+    background-color: var(--orange-color);
+}
+.bg-green {
+    
+    background-color: var(--green-color);
+}
+.bg-red{
+    background-color: var(--red-color);
+}
+/*end color*/
+/*start font*/
+.txt-c{
+    text-align: center;
+}
+.fs-12{
+    font-size: 12px;
+}
+.fs-13{
+    font-size: 13px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-15{
+    font-size: 15px;
+}
+.fs-25{
+    font-size: 25px;
+}
+.fw-bold {
+    font-weight: bold;
+}
+/*end font*/
+/*start rad*/
+.rad-6{
+    border-radius: 6px;
+}
+.rad-10{
+    border-radius: 10px;
+}
+.rad-half{
+    border-radius: 50%;
+}
+.b-none{
+    border: none;
+}
+/*end rad*/
+/*start width + hight*/
+.w-full{
+    width: 100%;
+}
+.w-fit{
+    width: fit-content;
+}
+.h-full{
+    height: 100vh;
+}
+/*start buttone*/
+.btn-shape{
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+@media (max-width: 768px) {
+    .left-sec {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 20px; /* حجم مصغر في الوضع الطبيعي */
+      height: 100vh;
+      overflow: hidden;
+      transition: width 0.3s ease;
+      z-index: 1000;
+    }
+  
+    .left-sec:hover {
+      width: 200px; /* الحجم عند الـ hover */
+    }
+  
+    .left-sec ul {
+      list-style: none;
+      padding: 20px;
+    }
+  
+    .left-sec ul li {
+      white-space: nowrap;
+      padding: 10px;
+      color: white;
+    }
+  
+    .left-sec ul li i {
+      margin-right: 10px;
+    }
+  
+    /* مثال علشان الكلام يختفي لما مش hover */
+    .left-sec:not(:hover) ul li span {
+      display: none;
+    }
+  }
+  
